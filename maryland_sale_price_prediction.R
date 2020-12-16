@@ -93,11 +93,6 @@ regressor = lm(Sale_Amount ~ .,
                data = model_dataset)
 summary(regressor)
 
-#predict sale price
+#predict sale price for one property
 prediction = predict(regressor, newdata = predict_dataset)
 print(paste("PREDICTED SALE PRICE: ", prediction))
-
-
-
-
-
